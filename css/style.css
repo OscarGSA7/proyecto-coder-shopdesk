@@ -1,0 +1,500 @@
+/*GENERALES */
+
+html {
+
+	font-size: 62.5%;
+	box-sizing: border-box;
+	scroll-behavior: smooth !important;
+}
+
+
+
+a{
+	text-decoration: none; 
+}
+
+body{
+	font-size: 16px;
+	 font-family: 'Cardo', serif;
+	background-color: #2F2F2F;
+}
+
+.show{
+	visibility: visible;
+	font-size: 4rem;
+}
+
+
+
+/* HEADER */
+
+.header{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem auto;
+		max-width: 1100px;
+	width: 85%;
+	margin: 0 auto;
+
+}
+
+.logo{
+
+	width: 10%;
+	cursor: pointer;
+}
+
+
+.logo > img{
+
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: 1rem;
+}
+
+.main-header{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2F2F2F;
+  padding: 0 0.4rem;
+}
+
+.main-logo{
+  color: black;
+  letter-spacing: 5px;
+  font-size:32px;
+  text-decoration:none;
+}
+
+.main-logo strong{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.main-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all .2s linear;
+  background-color: rgba(0,0,0,.7);
+  z-index: 100;
+}
+
+.main-nav.show{
+  margin-left: 0;
+}
+
+.nav-links{
+  background-color: rgb(47, 47, 47);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-item{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.link-item::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s ease all;
+}
+
+.link-item:hover::after {
+  width: 100%;
+  color: #fff;
+}
+
+.button-menu{
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-menu span{
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all .2s linear;
+}
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2){
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3){
+  display: none;
+}
+
+
+@media screen and (min-width:768px) {
+  .button-menu{
+    display: none;
+  }
+
+  .main-logo{
+
+  }
+
+  .main-nav{
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+  }
+
+  .nav-links{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  background-color: #2F2F2F;
+  }
+
+  .link-item{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+}
+
+/* GENERALES */
+
+.txt-negro{
+	color: #2F2F2F;
+}
+
+.icono{
+	font-size: 10rem;
+}
+
+/* SECTION */
+
+h2{
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-size: 5rem;
+}
+
+.dos-columnas{
+		margin-top: 11rem;
+
+	width: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.contenido{
+	width: 100%;
+		margin: 0px auto;
+	display: inline-flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+}
+
+.contenido > p{
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: 2px;
+	text-align: center;
+	width: 50%;
+		margin-top: 1.5rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.contenido img{
+	width: 35%;
+}
+
+
+.fg{
+	font-size: 7rem;
+	margin: 9rem auto;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+.btn-abajo{
+	width: 100%;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+	margin-top: -9rem;
+}
+
+.btn-abajo > a{
+		width: 50%;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+.img-abajo{
+	width: 15%;
+	transition: 0.3s;
+}
+
+.img-abajo:hover{
+	width: 16%;
+}
+
+
+.linea{
+ color: #fff;
+ width: 97%;
+}
+
+.productos-general{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-auto-rows: auto;
+  width: 100%;
+
+
+}
+
+
+
+.producto{
+	height: 80%;
+	padding: 2rem;
+	margin-right: 3rem;
+	margin-left: 3rem;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Oswald', sans-serif;
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+	border-radius: 1rem;
+}
+
+.producto:hover{
+	transform: scale(1.2);
+}
+
+.producto img{
+	width: 100%;
+	margin: 0 auto;
+}
+.producto p{
+
+	color: black;
+	font-size: 2rem;
+
+}
+
+.producto .estrellas{
+	color: #FFA41C;
+}
+
+.info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-auto-rows: auto;
+  width: 100%;
+}
+
+.info  p{
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		width: 80%;
+	text-align: center;
+		margin-top: 1.5rem;
+	font-size: 1.8rem;
+	color: #fff;
+	margin-left: 4rem;
+}
+
+.circulo {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+
+	left: 33%;
+     width: 150px;
+     height: 150px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #fff;
+}
+
+
+/* FOOTER */
+
+footer{
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-top: 2px solid white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: 0.3s;
+}
+
+footer a{
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	color: #fff;
+	transition: 0.3s;
+}
+
+footer a:hover{
+	color: #4C54FB;
+}
+
+footer p{
+
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	color: #fff;
+
+}
+
+.txt-footer{
+
+}
+
+.txt-footer h2{
+	font-size: 2.5rem;
+}
+
+/* MEDIA QUERYS */
+/* ES IMPORTANTE QUE LAS MEDIA QUERYS ESTÉN AL FINAL DEL ARCHIVO CSS */
+/* LAS MEDIAS DEBEN DE TENER UN ORDEN EN ESPECÍFICO *
+
+
+
+/* Mobile  */
+@media screen and (max-width:  600px){
+
+/* Inicio del media query */
+
+	h2{
+		font-size: 1rem;
+		width: 100%;
+		visibility: hidden;
+	}
+
+.main-logo{
+	font-size: 20px;
+}
+
+	.dos-columnas{
+
+
+	width: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+
+}
+	
+	.contenido img{
+	width: 0%;
+}
+
+.contenido > p{
+	text-align: justify;
+	width: 85%;
+	font-size: 1.8rem;
+}
+
+.btn-abajo{
+	margin-top: 0;
+}
+
+
+.btn-abajo > a{
+		width: 70%;
+}
+
+.btn-abajo > a > img{
+	width: 30%;
+}
+
+
+.productos-general{
+	display: flex;
+	flex-direction: column;
+}
+
+.linea{
+	visibility: hidden;
+}
+
+.info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: stretch;
+}
+
+footer{
+	flex-direction: column;
+	text-align: center;
+}
+
+/* Fin del media query */
+/* Fin del media query */
+	
+}
