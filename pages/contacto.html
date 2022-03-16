@@ -16,7 +16,7 @@
 <header class="main-header">
 
     <a class="main-logo" href="index.html" >
-      <strong>S|H|O|P|D|E|S|K</strong>
+      <strong class="text-shadow">S|H|O|P|D|E|S|K</strong>
     </a>
     <nav id="nav" class="main-nav" >
       <div class="nav-links" >
@@ -36,9 +36,9 @@
   </header>
     <script type="text/javascript" src="../javascript/script.js"></script>
 
-                <h2 class="show">¡CONTÁCTENOS!</h2>
+                <h2 class="show text-shadow">¡CONTÁCTENOS!</h2>
 
-
+<br><br>
     <section class="info">
         <div>
                 <div class="circulo"><h2 class="show txt-negro icono"><i class="fas fa-map-marker-alt"></i></h2></div>
@@ -65,28 +65,99 @@
 
     </section>
 
+<div class="contendedor-linea">
+<hr class="linea">
+</div>
 
 
+<!-- Note: A custom script is used to activate validation:
 
-<section class="formulario-contenedor">
-    <form action="envia.php" method="post" class="formulario">
- <fieldset> 
-  <label for="nombre" class="stl-label">Nombre:  </label>
-  <input type="text" id="nombre" name="nombre" class="input-contenedor" placeholder=" Nombre" required><br>
-  <label for="apellido" class="stl-label">Apellido:</label>
-  <input type="text" id="apellido" name="apellido" class="input-contenedor" placeholder=" Apellido" required><br>
-  <label for="email" class="stl-label" style="margin-right: 10px;"> Correo:</label>
-  <input type="email" id="email" name="email" class="input-contenedor" placeholder=" Correo" required><br>
-    <label for="numero" class="stl-label">Número:</label>
-  <input type="Text" id="numero" name="numero" class="input-contenedor" placeholder=" Número" required><br><br>
+var forms = document.querySelectorAll('.needs-validation')
+Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
 
-  <input type="submit" value="Enviar" class="submit-btn">
- </fieldset>
-</form> 
-</section>
+      form.classList.add('was-validated')
+    }, false)
+  })
+-->
+    <h2 class="show text-shadow">¡LLENA EL FORMULARIO Y PONTE EN CONTACTO CON NOSOTROS!</h2>
 
 
-<footer>
+<div class="container borde">
+<form class="row g-3 needs-validation" novalidate="">
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label mi-fuente-blanco">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required="">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label mi-fuente-blanco">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required="">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label mi-fuente-blanco">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="">
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label mi-fuente-blanco">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required="">
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label mi-fuente-blanco">State</label>
+    <select class="form-select" id="validationCustom04" required="">
+      <option selected="" disabled="" value="">Choose...</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label mi-fuente-blanco">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required="">
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+      <label class="form-check-label mi-fuente-blanco text-shadow" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary text-shadow" type="submit">Submit form</button>
+  </div>
+</form>
+</div>
+
+<footer class="text-shadow">
 
     <a class="main-logo" href="../index.html" >
       <strong>S|H|O|P|D|E|S|K</strong>
