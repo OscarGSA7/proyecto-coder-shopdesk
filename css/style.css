@@ -508,8 +508,14 @@ box-shadow: 11px 10px 11px -2px rgba(0,0,0,0.65);
 /* ESTILOS PARA BOOTSTRAP */
 
 .w-90{
-	width: 100% !important;
+	width: 90% !important;
 }
+
+.w-100{
+	width: 100% !important;
+	background-color: #638584;
+}
+
 .accordion-button{
 			font-family: 'Oswald', sans-serif;
 		letter-spacing: 3px;
