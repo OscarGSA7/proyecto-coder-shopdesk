@@ -1,0 +1,113 @@
+/* MEDIA QUERYS */
+/* ES IMPORTANTE QUE LAS MEDIA QUERYS ESTÉN AL FINAL DEL ARCHIVO CSS */
+/* LAS MEDIAS DEBEN DE TENER UN ORDEN EN ESPECÍFICO *
+
+
+
+/* Mobile  */
+@media screen and (max-width:  600px){
+
+    /* Inicio del media query */
+    
+        h2{
+            font-size: 1rem;
+            width: 100%;
+            visibility: hidden;
+        }
+    
+    .main-logo{
+        font-size: 20px;
+    }
+    
+        .dos-columnas{
+    
+    
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    
+    }
+        
+    .sin-mobile{
+        display: none;
+    }
+    
+        .contenido img{
+        width: 0%;
+    }
+    
+    .contenido > p{
+        text-align: justify;
+        width: 85%;
+        font-size: 1.8rem;
+    }
+    
+    .btn-abajo{
+        margin-top: 0;
+    }
+    
+    
+    .btn-abajo > a{
+            width: 70%;
+    }
+    
+    .btn-abajo > a > img{
+        width: 30%;
+    }
+    
+    
+    .btn-productos > a{
+    
+        font-size: 2rem;
+    
+            width: 60%;
+            height: 7rem;
+    
+    }
+    
+    .btn-productos > a:hover{
+    
+            width: 22%;
+            height: 6rem;
+    }
+    
+    .productos-general{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .linea{
+        visibility: hidden;
+    }
+    
+    .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    }
+    
+    .show{
+        font-size: 3rem !important;
+        margin-top: 0rem;
+    }
+    
+    .icono{
+        font-size: 6rem !important;
+    }
+    .input-contenedor{
+        width: 50%
+    }
+    
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Fin del media query */
+    /* Fin del media query */
+        
+    }
+    
+    /* FIN DE MEDIA QUERYS */

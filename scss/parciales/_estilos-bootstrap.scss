@@ -1,0 +1,61 @@
+/* ESTILOS PARA BOOTSTRAP */
+
+.w-90{
+	width: 90% !important;
+}
+
+.w-100{
+	width: 100% !important;
+	background-color: #638584;
+}
+
+.accordion-button{
+			font-family: 'Oswald', sans-serif;
+		letter-spacing: 3px;
+		font-size: 2.5rem !important;
+}
+
+.accordion-collapse{
+	background-color: #2F2F2F !important;
+}
+
+.bg-img{
+	background-size: cover;
+}
+
+.form-control {
+    font-size: 2rem !important;
+}
+
+.form-select {
+    font-size: 2rem !important;
+}
+
+.form-check-input {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    margin-top: 1.50em !important;
+    margin-right: 1rem !important; 
+}
+
+.btn-primary {
+    color: #000 !important;
+    background-color: #fff !important;
+    	font-family: 'Oswald', sans-serif !important;
+	letter-spacing: 5px !important;
+	font-size: 1.5rem !important;
+    border-color: black !important;
+}
+
+.borde{
+	margin-top: 3rem;
+	border: 2px solid white;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+hr {
+    opacity: 1 !important;
+}
+
+/* FIN ESTILOS P BOOTSTAP */
