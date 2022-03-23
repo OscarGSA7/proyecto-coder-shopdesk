@@ -1,6 +1,6 @@
 /* FOOTER */
 
-footer{
+footer {
 	width: 100%;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -9,32 +9,30 @@ footer{
 	flex-direction: row;
 	justify-content: space-around;
 	transition: 0.3s;
-}
-
-footer a{
-	text-decoration: none  !important;
-	font-family: 'Oswald', sans-serif;
-	letter-spacing: 2px;
-	font-size: 1.5rem;
-	color: #fff;
-	transition: 0.3s;
-}
-
-footer a:hover{
-	color: #4C54FB;
-}
-
-footer p{
-
-	font-family: 'Oswald', sans-serif;
-	letter-spacing: 2px;
-	font-size: 1.5rem;
-	color: #fff;
-
-}
-
-.txt-footer h2{
+  
+	a {
+	  text-decoration: none  !important;
+	  font-family: 'Oswald', sans-serif;
+	  letter-spacing: 2px;
+	  font-size: 1.5rem;
+	  color: #fff;
+	  transition: 0.3s;
+  
+	  &:hover {
+		color: #4C54FB;
+	  }
+	}
+  
+	p {
+	  font-family: 'Oswald', sans-serif;
+	  letter-spacing: 2px;
+	  font-size: 1.5rem;
+	  color: #fff;
+	}
+  }
+  
+  .txt-footer h2 {
 	font-size: 2.5rem;
-}
-
-/* FIN FOOTER */
+  }
+  
+  /* FIN FOOTER */

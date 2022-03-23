@@ -5,109 +5,109 @@
 
 
 /* Mobile  */
-@media screen and (max-width:  600px){
-
+@media screen and (max-width: 600px) {
     /* Inicio del media query */
-    
-        h2{
-            font-size: 1rem;
-            width: 100%;
-            visibility: hidden;
-        }
-    
-    .main-logo{
-        font-size: 20px;
+  
+    h2 {
+      font-size: 1rem;
+      width: 100%;
+      visibility: hidden;
     }
-    
-        .dos-columnas{
-    
-    
-        width: 100%;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    
+  
+    .main-logo {
+      font-size: 20px;
     }
-        
-    .sin-mobile{
-        display: none;
+  
+    .dos-columnas {
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
     }
-    
-        .contenido img{
+  
+    .sin-mobile {
+      display: none;
+    }
+  
+    .contenido {
+      img {
         width: 0%;
-    }
-    
-    .contenido > p{
+      }
+  
+      > p {
         text-align: justify;
         width: 85%;
         font-size: 1.8rem;
+      }
     }
-    
-    .btn-abajo{
-        margin-top: 0;
+  
+    .btn-abajo {
+      margin-top: 0;
+  
+      > a {
+        width: 70%;
+  
+        > img {
+          width: 30%;
+        }
+      }
     }
-    
-    
-    .btn-abajo > a{
-            width: 70%;
+  
+    .btn-productos > a {
+      font-size: 2rem;
+      width: 73%;
+      height: 7rem;
+      text-align: center;  
+
+      &:hover {
+        width: 22%;
+        height: 6rem;
+      }
     }
-    
-    .btn-abajo > a > img{
-        width: 30%;
+  
+    .producto {
+
+        margin-right: 5rem !important;
+        margin-left: 5rem !important;
+
     }
-    
-    
-    .btn-productos > a{
-    
-        font-size: 2rem;
-    
-            width: 60%;
-            height: 7rem;
-    
+
+    .productos-general {
+      display: flex;
+      flex-direction: column;
     }
-    
-    .btn-productos > a:hover{
-    
-            width: 22%;
-            height: 6rem;
+  
+    .linea {
+      visibility: hidden;
     }
-    
-    .productos-general{
-        display: flex;
-        flex-direction: column;
+  
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
     }
-    
-    .linea{
-        visibility: hidden;
+  
+    .show {
+      font-size: 3rem !important;
+      margin-top: 0rem;
     }
-    
-    .info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+  
+    .icono {
+      font-size: 6rem !important;
     }
-    
-    .show{
-        font-size: 3rem !important;
-        margin-top: 0rem;
+  
+    .input-contenedor {
+      width: 50%;
     }
-    
-    .icono{
-        font-size: 6rem !important;
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
     }
-    .input-contenedor{
-        width: 50%
-    }
-    
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    
+  
     /* Fin del media query */
     /* Fin del media query */
-        
-    }
-    
-    /* FIN DE MEDIA QUERYS */
+  }
+  
+  /* FIN DE MEDIA QUERYS */
