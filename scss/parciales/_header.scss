@@ -26,19 +26,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2F2F2F;
+  background-color:  map-get($colores-generales, gris);
   padding: 0 0.4rem;
 }
 
 .main-logo {
-  color: black;
+  color: map-get($colores-generales, negro);
   letter-spacing: 5px;
   font-size: 32px;
   text-decoration: none;
 
   strong {
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
+    @include fuente-general;
+    color: map-get($colores-generales, blanco);
     margin-left: 1rem;
   }
 }
@@ -70,10 +70,10 @@
 }
 
 .link-item {
-  font-family: 'Oswald', sans-serif;
+  @include fuente-general;
   font-size: 2rem;
   margin-top: 2rem;
-  color: white;
+  color: map-get($colores-generales, blanco);
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -81,7 +81,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-color: #fff;
+    background-color: map-get($colores-generales, blanco);
     bottom: -5px;
     left: 0;
     width: 0%;
@@ -91,7 +91,7 @@
 
   &:hover::after {
     width: 100%;
-    color: #fff;
+    color: map-get($colores-generales, blanco);
   }
 }
 
@@ -103,8 +103,7 @@
   display: flex;
   background: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @extend %justificado-centro;
   cursor: pointer;
 
   span {
@@ -112,7 +111,7 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: white;
+    background: map-get($colores-generales, blanco);
     border-radius: 3px;
     transform-origin: 4px 0px;
     transition: all .2s linear;
@@ -121,7 +120,7 @@
   &.close span {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 0px);
-    background: #ffffff;
+    background: map-get($colores-generales, blanco);
 
     &:nth-child(2) {
       transform: rotate(-45deg) translate(-8px, 5px);
@@ -151,7 +150,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background-color: #2F2F2F;
+    background-color:  map-get($colores-generales, gris);
   }
 
   .link-item {

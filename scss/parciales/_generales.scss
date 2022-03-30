@@ -1,4 +1,24 @@
 /*GENERALES */
+$colores-generales: (
+
+		"blanco": #fff,
+		"gris": #2F2F2F,
+		"negro": #000,
+		"amarillo": rgb(255, 218, 7),
+
+);
+
+@mixin fuente-general {
+
+	font-family: 'Oswald', serif;
+
+}
+
+%justificado-centro{
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 
 html {
 
@@ -15,8 +35,8 @@ a{
 
 body{
 	font-size: 16px;
-	 font-family: 'Cardo', serif;
-	background-color: #2F2F2F !important;
+	@include fuente-general;
+	background-color: map-get($colores-generales, gris) !important;
 }
 
 .show{
@@ -25,4 +45,20 @@ body{
 	margin-top: 2rem;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-left: 1px solid rgba(36, 36, 36, 0.686);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background: map-get($colores-generales, blanco);
+    -webkit-box-shadow: inset 0 0 4px rgb(67, 67, 67); 
+
+}
 /* FIN GENERALES */

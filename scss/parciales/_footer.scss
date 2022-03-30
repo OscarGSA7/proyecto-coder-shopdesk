@@ -4,7 +4,7 @@ footer {
 	width: 100%;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	border-top: 2px solid white;
+	border-top: 2px solid map-get($colores-generales, blanco);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -12,22 +12,23 @@ footer {
   
 	a {
 	  text-decoration: none  !important;
-	  font-family: 'Oswald', sans-serif;
+	  @include fuente-general;
 	  letter-spacing: 2px;
 	  font-size: 1.5rem;
-	  color: #fff;
+	  color:  map-get($colores-generales, blanco);
 	  transition: 0.3s;
   
 	  &:hover {
-		color: #4C54FB;
+		color:  map-get($colores-generales, blanco);
+		text-decoration: underline;
 	  }
 	}
   
 	p {
-	  font-family: 'Oswald', sans-serif;
+		@include fuente-general;
 	  letter-spacing: 2px;
 	  font-size: 1.5rem;
-	  color: #fff;
+	  color: map-get($colores-generales, blanco);
 	}
   }
   

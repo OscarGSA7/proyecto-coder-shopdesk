@@ -7,6 +7,11 @@
 /*6. FOOTER */
 /*7. MEDIA QUERYS*/
 /*GENERALES */
+.button-menu, .formulario, .dos-columnas, .contenido, .btn-abajo, .btn-productos, .productos-general, .info, .circulo, .contendedor-linea {
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -17,13 +22,26 @@ a {
 
 body {
   font-size: 16px;
-  font-family: 'Cardo', serif;
+  font-family: 'Oswald', serif;
   background-color: #2F2F2F !important; }
 
 .show {
   visibility: visible;
   font-size: 4rem;
   margin-top: 2rem; }
+
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(36, 36, 36, 0.686);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 4px #434343; }
 
 /* FIN GENERALES */
 /* HEADER */
@@ -53,12 +71,12 @@ body {
   padding: 0 0.4rem; }
 
 .main-logo {
-  color: black;
+  color: #000;
   letter-spacing: 5px;
   font-size: 32px;
   text-decoration: none; }
   .main-logo strong {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     color: #fff;
     margin-left: 1rem; }
 
@@ -85,10 +103,10 @@ body {
   justify-content: flex-start; }
 
 .link-item {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   font-size: 2rem;
   margin-top: 2rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   position: relative; }
@@ -113,22 +131,20 @@ body {
   display: flex;
   background: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   cursor: pointer; }
   .button-menu span {
     width: 37px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: white;
+    background: #fff;
     border-radius: 3px;
     transform-origin: 4px 0px;
     transition: all .2s linear; }
   .button-menu.close span {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 0px);
-    background: #ffffff; }
+    background: #fff; }
     .button-menu.close span:nth-child(2) {
       transform: rotate(-45deg) translate(-8px, 5px); }
     .button-menu.close span:nth-child(3) {
@@ -168,25 +184,22 @@ body {
   padding: 2rem; }
 
 .mi-fuente-blanco {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   letter-spacing: 5px;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 3rem; }
 
 .mi-fuente-blanco-mobile {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 2rem; }
 
 .formulario {
   width: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   letter-spacing: 5px;
-  margin-top: 1rem;
-  align-items: center;
-  align-content: center;
-  justify-content: center; }
+  margin-top: 1rem; }
   .formulario label {
     font-size: 3rem;
     color: #fff; }
@@ -209,12 +222,12 @@ body {
 /* FIN GENERALES */
 /* SECTION */
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
+  font-size: 5rem !important;
   letter-spacing: 5px;
   color: #fff;
   width: 100%;
-  text-align: center;
-  font-size: 5rem !important; }
+  text-align: center; }
 
 .img-inicio {
   width: 100%; }
@@ -222,19 +235,15 @@ h2 {
 .dos-columnas {
   margin-top: 11rem;
   width: 100%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center; }
+  margin: 0 auto; }
 
 .contenido {
   width: 100%;
   margin: 0px auto;
   display: inline-flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center; }
+  text-align: center; }
   .contenido > p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 2px;
     text-align: center;
     width: 50%;
@@ -255,8 +264,6 @@ h2 {
 
 .btn-abajo {
   width: 100%;
-  align-items: center;
-  justify-content: center;
   display: flex;
   margin-top: -9rem; }
   .btn-abajo > a {
@@ -268,11 +275,9 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   display: flex; }
   .btn-productos > a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 2px;
     font-size: 2.5rem;
     padding: 1rem;
@@ -280,7 +285,7 @@ h2 {
     height: 5rem;
     padding-bottom: 5rem;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 1rem;
     background-color: #fff;
     text-decoration: none;
@@ -297,18 +302,16 @@ h2 {
 
 .linea {
   border: 1px solid #fff !important;
-  background-color: white;
+  background-color: #fff;
   color: #fff !important;
   width: 97% !important; }
 
 #productos {
-  border-top: 2px solid white; }
+  border-top: 2px solid #fff; }
 
 .productos-general {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  justify-content: center;
   grid-auto-rows: auto;
   width: 100%; }
 
@@ -321,8 +324,8 @@ h2 {
   display: flex !important;
   flex-direction: column !important;
   font-family: 'Oswald', sans-serif !important;
-  background-color: white !important;
-  color: black !important;
+  background-color: #fff !important;
+  color: #000 !important;
   transition: 0.3s !important;
   border-radius: 1rem !important;
   text-decoration: none !important;
@@ -334,23 +337,21 @@ h2 {
     width: 100% !important;
     margin: 0 auto !important; }
   .producto p {
-    color: black !important;
+    color: #000 !important;
     font-size: 2rem !important;
     text-decoration: none !important; }
   .producto a {
     text-decoration: none !important; }
   .producto .estrellas {
-    color: #FFA41C !important; }
+    color: #ffda07 !important; }
 
 .info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
   grid-auto-rows: auto;
   width: 100%; }
   .info p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 2px;
     width: 80%;
     text-align: center;
@@ -363,7 +364,6 @@ h2 {
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: center;
   left: 33%;
   width: 150px;
   height: 150px;
@@ -374,8 +374,7 @@ h2 {
 
 .contendedor-linea {
   width: 100%;
-  display: flex;
-  justify-content: center; }
+  display: flex; }
 
 .relleno {
   width: 100%;
@@ -391,7 +390,7 @@ h2 {
   background-color: #638584; }
 
 .accordion-button {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', serif;
   letter-spacing: 3px;
   font-size: 2.5rem !important; }
 
@@ -419,11 +418,11 @@ h2 {
   font-family: 'Oswald', sans-serif !important;
   letter-spacing: 5px !important;
   font-size: 1.5rem !important;
-  border-color: black !important; }
+  border-color: #000 !important; }
 
 .borde {
   margin-top: 3rem;
-  border: 2px solid white;
+  border: 2px solid #fff;
   padding: 1rem;
   border-radius: 1rem; }
 
@@ -436,22 +435,23 @@ footer {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-top: 2px solid white;
+  border-top: 2px solid #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   transition: 0.3s; }
   footer a {
     text-decoration: none  !important;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 2px;
     font-size: 1.5rem;
     color: #fff;
     transition: 0.3s; }
     footer a:hover {
-      color: #4C54FB; }
+      color: #fff;
+      text-decoration: underline; }
   footer p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', serif;
     letter-spacing: 2px;
     font-size: 1.5rem;
     color: #fff; }

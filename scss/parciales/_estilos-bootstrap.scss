@@ -10,13 +10,13 @@
 }
 
 .accordion-button{
-			font-family: 'Oswald', sans-serif;
+		@include fuente-general;
 		letter-spacing: 3px;
 		font-size: 2.5rem !important;
 }
 
 .accordion-collapse{
-	background-color: #2F2F2F !important;
+	background-color:  map-get($colores-generales, gris) !important;
 }
 
 .bg-img{
@@ -39,17 +39,17 @@
 }
 
 .btn-primary {
-    color: #000 !important;
-    background-color: #fff !important;
+    color: map-get($colores-generales, negro) !important;
+    background-color: map-get($colores-generales, blanco) !important;
     	font-family: 'Oswald', sans-serif !important;
 	letter-spacing: 5px !important;
 	font-size: 1.5rem !important;
-    border-color: black !important;
+    border-color: map-get($colores-generales, negro) !important;
 }
 
 .borde{
 	margin-top: 3rem;
-	border: 2px solid white;
+	border: 2px solid map-get($colores-generales, blanco);
 	padding: 1rem;
 	border-radius: 1rem;
 }
